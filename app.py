@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify
 from langchain_openai import ChatOpenAI
-from langchain.agents import initialize_agent, Tool
+from langchain.agents import AgentExecutor, create_react_agent
+from langchain.tools import Tool
 from langchain.agents import AgentType
 import os
 
